@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://construtoras.mindy.com.br/sitemap.xml

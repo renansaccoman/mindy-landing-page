@@ -55,11 +55,11 @@ img{max-width:100%;display:block;}
   display:block;font-family:'Inter',sans-serif;font-size:10px;
   color:var(--ink-400);font-weight:600;letter-spacing:2px;
 }
-.nav ul{display:flex;gap:32px;}
-.nav a{color:var(--white);font-size:15px;font-weight:500;opacity:.85;}
+.nav ul{display:flex;gap:28px;flex-wrap:wrap;}
+.nav a{color:var(--white);font-size:14.5px;font-weight:500;opacity:.85;}
 .nav a:hover{opacity:1;}
 
-/* Hero */
+/* Hero (landing original) */
 .hero{background:var(--navy-950);color:var(--white);padding:80px 0 100px;}
 .hero-inner{
   display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;
@@ -84,7 +84,7 @@ img{max-width:100%;display:block;}
 .rating p{font-size:13px;color:#9aa4bd;margin:0;}
 .hero-media img{border-radius:16px;}
 
-/* Soluções */
+/* Soluções (landing original) */
 .solucoes{padding:100px 0;background:var(--bg-soft);}
 .solucoes-inner{display:grid;grid-template-columns:.9fr 1.4fr;gap:60px;}
 .solucoes-text h2{font-size:36px;font-weight:800;margin-bottom:20px;}
@@ -100,7 +100,7 @@ img{max-width:100%;display:block;}
 .solucao-item h3{font-size:18px;font-weight:700;margin-bottom:8px;}
 .solucao-item p{font-size:15px;color:var(--ink-600);}
 
-/* CTA final */
+/* CTA final (landing original) */
 .cta-final{background:var(--navy-900);color:var(--white);padding:80px 0;text-align:center;}
 .cta-final h2{font-size:30px;font-weight:800;margin-bottom:16px;}
 .cta-final p{color:#c3cbdb;margin-bottom:32px;}
@@ -108,10 +108,69 @@ img{max-width:100%;display:block;}
 /* Footer */
 .footer{padding:28px 0;text-align:center;color:var(--ink-400);font-size:14px;}
 
+/* ===== Novo: páginas de SEO (pillar pages) ===== */
+
+/* Breadcrumb */
+.breadcrumb{
+  padding:18px 0;font-size:13.5px;color:var(--ink-600);
+  display:flex;align-items:center;gap:8px;
+}
+.breadcrumb a{color:var(--ink-600);}
+.breadcrumb a:hover{color:var(--navy-900);}
+.breadcrumb span{color:var(--ink-400);}
+
+/* Tag (usado no hero das páginas internas) */
+.tag{
+  display:inline-block;background:rgba(246,168,33,.15);color:var(--gold-500);
+  font-weight:700;font-size:12.5px;letter-spacing:1px;text-transform:uppercase;
+  padding:6px 14px;border-radius:999px;margin-bottom:18px;
+}
+
+/* Seções genéricas de conteúdo */
+.section{padding:80px 0;}
+.section-soft{background:var(--bg-soft);}
+.section h2{font-size:30px;font-weight:800;margin-bottom:16px;}
+.section > .container > p{font-size:16.5px;color:var(--ink-600);max-width:760px;margin-bottom:24px;}
+
+/* Grid de artigos (soluções dentro de páginas internas) */
+.article-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:32px;
+}
+.article-grid article{
+  background:var(--white);border:1px solid var(--line);border-radius:12px;padding:28px;
+}
+.article-grid h3{font-size:17px;font-weight:700;margin-bottom:10px;}
+.article-grid p{font-size:14.5px;color:var(--ink-600);}
+
+/* FAQ */
+.faq details{
+  border-bottom:1px solid var(--line);padding:18px 0;
+}
+.faq summary{
+  font-weight:700;font-size:16px;cursor:pointer;color:var(--navy-900);
+  list-style:none;display:flex;justify-content:space-between;align-items:center;
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";font-size:20px;color:var(--gold-500);}
+.faq details[open] summary::after{content:"–";}
+.faq p{margin-top:12px;color:var(--ink-600);font-size:15px;}
+
+/* Links internos em texto corrido */
+.internal-links{margin-top:16px;display:flex;flex-direction:column;gap:8px;}
+.internal-links a{color:var(--navy-900);font-weight:600;text-decoration:underline;}
+.internal-links a:hover{color:var(--gold-600);}
+
+/* Resultados/números */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:24px;}
+.stats .stat-number{font-size:36px;font-weight:800;color:var(--navy-900);}
+.stats .stat-label{font-size:14px;color:var(--ink-600);}
+
 /* Responsivo */
 @media (max-width:900px){
   .hero-inner, .solucoes-inner{grid-template-columns:1fr;}
   .solucoes-grid{grid-template-columns:1fr;}
+  .article-grid{grid-template-columns:1fr;}
+  .stats{grid-template-columns:1fr;}
   .nav{display:none;}
   .hero-text h1{font-size:32px;}
 }
