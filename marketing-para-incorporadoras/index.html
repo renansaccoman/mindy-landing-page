@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Marketing para Empresas de Engenharia | Mindy Marketing</title>
-<meta name="description" content="Marketing digital para empresas de engenharia e infraestrutura: posicionamento técnico, geração de leads B2B e fortalecimento institucional.">
+<title>Marketing para Incorporadoras e Lançamentos Imobiliários</title>
+<meta name="description" content="Estratégias de marketing para incorporadoras com foco em lançamentos imobiliários, geração de demanda qualificada e fortalecimento de marca.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://construtoras.mindy.com.br/marketing-para-empresas-de-engenharia/">
+<link rel="canonical" href="https://construtoras.mindy.com.br/marketing-para-incorporadoras/">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Marketing para Empresas de Engenharia | Mindy Marketing">
-<meta property="og:description" content="Marketing digital para empresas de engenharia e infraestrutura: posicionamento técnico, geração de leads B2B e fortalecimento institucional.">
-<meta property="og:url" content="https://construtoras.mindy.com.br/marketing-para-empresas-de-engenharia/">
+<meta property="og:title" content="Marketing para Incorporadoras e Lançamentos Imobiliários">
+<meta property="og:description" content="Estratégias de marketing para incorporadoras com foco em lançamentos imobiliários, geração de demanda qualificada e fortalecimento de marca.">
+<meta property="og:url" content="https://construtoras.mindy.com.br/marketing-para-incorporadoras/">
 <meta property="og:image" content="https://construtoras.mindy.com.br/assets/img/og-construcao-civil.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -24,7 +24,7 @@
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://construtoras.mindy.com.br/" },
-    { "@type": "ListItem", "position": 2, "name": "Marketing para Empresas de Engenharia", "item": "https://construtoras.mindy.com.br/marketing-para-empresas-de-engenharia/" }
+    { "@type": "ListItem", "position": 2, "name": "Marketing para Incorporadoras", "item": "https://construtoras.mindy.com.br/marketing-para-incorporadoras/" }
   ]
 }
 </script>
@@ -109,6 +109,23 @@
   }
   .nav-right{display:flex;align-items:center;gap:28px;}
 
+  /* Dropdown do menu */
+  nav.main-nav li{position:relative;}
+  nav.main-nav .dropdown{
+    position:absolute;top:calc(100% + 22px);left:-16px;min-width:230px;
+    background:#fff;border-radius:12px;padding:10px;
+    box-shadow:0 24px 44px -16px rgba(8,16,36,.35);
+    opacity:0;visibility:hidden;transform:translateY(6px);
+    transition:opacity .18s ease, transform .18s ease, visibility .18s ease;
+    z-index:50;
+  }
+  nav.main-nav li:hover .dropdown{opacity:1;visibility:visible;transform:translateY(0);}
+  nav.main-nav .dropdown a{
+    display:block;padding:10px 14px;border-radius:8px;
+    color:var(--navy-900);font-size:14px;font-weight:500;
+  }
+  nav.main-nav .dropdown a:hover{background:var(--bg-soft);color:var(--navy-900);}
+
   /* ---------- HERO ---------- */
   .hero{
     position:relative;background:var(--navy-950);overflow:hidden;
@@ -161,7 +178,7 @@
     border-radius:14px;overflow:hidden;border:1px solid var(--line);
   }
   .sector-card{
-    background:#fbfcfe;padding:34px 22px;text-align:left;transition:background .2s ease;
+    display:block;background:#fbfcfe;padding:34px 22px;text-align:left;transition:background .2s ease;
   }
   .sector-card:hover{background:#f2f5fa;}
   .sector-icon{
@@ -332,6 +349,7 @@
   @media(max-width:1080px){
     .service-grid{grid-template-columns:1fr;}
     .stats-row{grid-template-columns:1fr;}
+    nav.main-nav .dropdown{display:none;}
   }
 
 </style>
@@ -347,7 +365,17 @@
     <nav class="main-nav">
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/#setores">Setores ▾</a></li>
+        <li>
+          <a href="/#setores">Setores ▾</a>
+          <div class="dropdown">
+            <a href="/marketing-para-construtoras/">Construtoras</a>
+            <a href="/marketing-para-pavimentacao/">Pavimentação</a>
+            <a href="/marketing-para-infraestrutura/">Infraestrutura</a>
+            <a href="/marketing-para-loteamentos/">Loteamentos</a>
+            <a href="/marketing-para-empresas-de-engenharia/">Engenharia</a>
+            <a href="/marketing-para-obras-publicas/">Obras Públicas</a>
+          </div>
+        </li>
         <li><a href="/#solucoes">Serviços ▾</a></li>
         <li><a href="/#cases">Cases</a></li>
         <li><a href="/#insights">Insights</a></li>
@@ -363,14 +391,14 @@
 </header>
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
-  <a href="/">Início</a><span>›</span><span>Marketing para Empresas de Engenharia</span>
+  <a href="/">Início</a><span>›</span><span>Marketing para Incorporadoras</span>
 </nav>
 
 <section class="page-hero">
   <div class="container">
-    <span class="tag">Especialistas em Engenharia e Infraestrutura</span>
-    <h1>Marketing para Empresas de Engenharia</h1>
-    <p>Posicionamento técnico e comercial para empresas de engenharia, pavimentação e infraestrutura que precisam gerar oportunidades B2B qualificadas.</p>
+    <span class="tag">Especialistas em Lançamentos Imobiliários</span>
+    <h1>Marketing para Incorporadoras</h1>
+    <p>Estratégias de geração de demanda para lançamentos imobiliários, do pré-lançamento à entrega das últimas unidades.</p>
     <a href="/#contato" class="btn btn-primary">Solicitar diagnóstico gratuito
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
     </a>
@@ -379,8 +407,8 @@
 
 <section class="content-section">
   <div class="container">
-    <h2>Por que investir em marketing para empresas de engenharia?</h2>
-    <p>Empresas de engenharia costumam vender através de licitações, indicações e relacionamento direto — mas isso limita o alcance a uma rede já conhecida. Um site institucional forte, presença técnica no Google e um processo comercial estruturado ampliam o alcance para novos contratantes, tanto públicos quanto privados, sem abrir mão da credibilidade técnica que o setor exige.</p>
+    <h2>Por que investir em marketing para incorporadoras?</h2>
+    <p>Cada lançamento imobiliário tem uma janela de tempo definida para atingir a velocidade de vendas esperada. Isso exige uma estratégia de marketing digital pensada especificamente para funis de lançamento — captação de leads, nutrição, plantão de vendas e reforço para as últimas unidades. Uma incorporadora que trata marketing como parte central da operação comercial reduz o tempo de venda do estoque e melhora o retorno sobre o investimento em mídia.</p>
   </div>
 </section>
 
@@ -388,9 +416,9 @@
   <div class="container">
     <h2>Soluções</h2>
     <div class="service-grid">
-      <div class="service-card"><h3>Site Institucional Técnico</h3><p>Apresentação de portfólio, certificações e capacidade técnica de forma clara para contratantes.</p></div>
-      <div class="service-card"><h3>SEO para Licitações e Contratos</h3><p>Posicionamento orgânico para termos técnicos e regionais relevantes ao seu segmento de atuação.</p></div>
-      <div class="service-card"><h3>Geração de Leads B2B</h3><p>Campanhas direcionadas a decisores técnicos e administrativos de empresas contratantes.</p></div>
+      <div class="service-card"><h3>Landing Pages de Lançamento</h3><p>Páginas de alta conversão para cada fase do funil: pré-lançamento, lançamento e vendas remanescentes.</p></div>
+      <div class="service-card"><h3>Tráfego Pago para Imóveis</h3><p>Campanhas segmentadas por perfil de comprador, região e etapa da jornada de compra.</p></div>
+      <div class="service-card"><h3>CRM Integrado ao WhatsApp</h3><p>Organização e resposta rápida aos leads gerados durante o lançamento, sem perder oportunidades.</p></div>
     </div>
   </div>
 </section>
@@ -404,8 +432,8 @@
       <div><div class="stat-number">10+</div><div class="stat-label">Anos de mercado</div></div>
     </div>
     <div class="internal-links">
-      <a href="/site-para-construtoras/">Conheça nosso serviço de criação de sites técnicos</a>
-      <a href="/design-de-marca-para-construtoras/">Veja como fortalecemos marcas do setor</a>
+      <a href="/lancamento-imobiliario/">Veja nossa metodologia para lançamentos imobiliários</a>
+      <a href="/crm-para-construtoras/">Conheça o CRM integrado ao WhatsApp e IA</a>
       <a href="/#cases">Confira nossos cases no setor</a>
       <a href="/#contato">Solicite um diagnóstico estratégico</a>
     </div>
@@ -416,16 +444,16 @@
   <div class="container">
     <h2>Perguntas frequentes</h2>
     <details>
-      <summary>Marketing digital funciona para empresas que vendem por licitação?</summary>
-      <p>Sim. Mesmo com vendas via licitação, uma presença digital forte aumenta a credibilidade da empresa durante o processo de qualificação e abre portas para contratos privados.</p>
+      <summary>Como funciona o marketing para lançamentos imobiliários?</summary>
+      <p>Estruturamos landing pages, campanhas de tráfego pago e CRM para captar e converter leads em cada fase do lançamento, desde a pesquisa de mercado até a venda das últimas unidades.</p>
     </details>
     <details>
-      <summary>A Mindy atende empresas de pavimentação e infraestrutura?</summary>
-      <p>Sim. Atendemos construtoras, incorporadoras e empresas de engenharia, incluindo pavimentação e infraestrutura.</p>
+      <summary>A Mindy atende incorporadoras de qualquer porte?</summary>
+      <p>Sim. Atendemos desde incorporadoras regionais até empresas com múltiplos lançamentos simultâneos.</p>
     </details>
     <details>
-      <summary>Quanto custa contratar uma agência especializada?</summary>
-      <p>O investimento varia de acordo com o escopo do projeto. Solicite um diagnóstico gratuito para receber uma proposta personalizada.</p>
+      <summary>É possível começar antes do lançamento oficial?</summary>
+      <p>Sim, e é recomendado. Estratégias de pré-lançamento ajudam a construir uma base de leads qualificados antes mesmo do estande de vendas abrir.</p>
     </details>
   </div>
 
@@ -434,9 +462,9 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"Marketing digital funciona para empresas que vendem por licitação?","acceptedAnswer":{"@type":"Answer","text":"Sim. Mesmo com vendas via licitação, uma presença digital forte aumenta a credibilidade da empresa durante o processo de qualificação e abre portas para contratos privados."}},
-      {"@type":"Question","name":"A Mindy atende empresas de pavimentação e infraestrutura?","acceptedAnswer":{"@type":"Answer","text":"Sim. Atendemos construtoras, incorporadoras e empresas de engenharia, incluindo pavimentação e infraestrutura."}},
-      {"@type":"Question","name":"Quanto custa contratar uma agência especializada?","acceptedAnswer":{"@type":"Answer","text":"O investimento varia de acordo com o escopo do projeto. Solicite um diagnóstico gratuito para receber uma proposta personalizada."}}
+      {"@type":"Question","name":"Como funciona o marketing para lançamentos imobiliários?","acceptedAnswer":{"@type":"Answer","text":"Estruturamos landing pages, campanhas de tráfego pago e CRM para captar e converter leads em cada fase do lançamento, desde a pesquisa de mercado até a venda das últimas unidades."}},
+      {"@type":"Question","name":"A Mindy atende incorporadoras de qualquer porte?","acceptedAnswer":{"@type":"Answer","text":"Sim. Atendemos desde incorporadoras regionais até empresas com múltiplos lançamentos simultâneos."}},
+      {"@type":"Question","name":"É possível começar antes do lançamento oficial?","acceptedAnswer":{"@type":"Answer","text":"Sim, e é recomendado. Estratégias de pré-lançamento ajudam a construir uma base de leads qualificados antes mesmo do estande de vendas abrir."}}
     ]
   }
   </script>
@@ -445,7 +473,7 @@
 <section class="footer-cta" id="contato">
   <div class="container fc-grid">
     <div>
-      <h2>Pronto para ampliar as oportunidades da sua empresa de engenharia?</h2>
+      <h2>Pronto para acelerar as vendas do seu próximo lançamento?</h2>
       <p>Fale com nosso time e receba um diagnóstico gratuito da sua presença digital.</p>
     </div>
     <div class="fc-right">

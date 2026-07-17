@@ -109,6 +109,23 @@
   }
   .nav-right{display:flex;align-items:center;gap:28px;}
 
+  /* Dropdown do menu */
+  nav.main-nav li{position:relative;}
+  nav.main-nav .dropdown{
+    position:absolute;top:calc(100% + 22px);left:-16px;min-width:230px;
+    background:#fff;border-radius:12px;padding:10px;
+    box-shadow:0 24px 44px -16px rgba(8,16,36,.35);
+    opacity:0;visibility:hidden;transform:translateY(6px);
+    transition:opacity .18s ease, transform .18s ease, visibility .18s ease;
+    z-index:50;
+  }
+  nav.main-nav li:hover .dropdown{opacity:1;visibility:visible;transform:translateY(0);}
+  nav.main-nav .dropdown a{
+    display:block;padding:10px 14px;border-radius:8px;
+    color:var(--navy-900);font-size:14px;font-weight:500;
+  }
+  nav.main-nav .dropdown a:hover{background:var(--bg-soft);color:var(--navy-900);}
+
   /* ---------- HERO ---------- */
   .hero{
     position:relative;background:var(--navy-950);overflow:hidden;
@@ -161,7 +178,7 @@
     border-radius:14px;overflow:hidden;border:1px solid var(--line);
   }
   .sector-card{
-    background:#fbfcfe;padding:34px 22px;text-align:left;transition:background .2s ease;
+    display:block;background:#fbfcfe;padding:34px 22px;text-align:left;transition:background .2s ease;
   }
   .sector-card:hover{background:#f2f5fa;}
   .sector-icon{
@@ -332,6 +349,7 @@
   @media(max-width:1080px){
     .service-grid{grid-template-columns:1fr;}
     .stats-row{grid-template-columns:1fr;}
+    nav.main-nav .dropdown{display:none;}
   }
 
 </style>
@@ -347,7 +365,17 @@
     <nav class="main-nav">
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/#setores">Setores ▾</a></li>
+        <li>
+          <a href="/#setores">Setores ▾</a>
+          <div class="dropdown">
+            <a href="/marketing-para-construtoras/">Construtoras</a>
+            <a href="/marketing-para-pavimentacao/">Pavimentação</a>
+            <a href="/marketing-para-infraestrutura/">Infraestrutura</a>
+            <a href="/marketing-para-loteamentos/">Loteamentos</a>
+            <a href="/marketing-para-empresas-de-engenharia/">Engenharia</a>
+            <a href="/marketing-para-obras-publicas/">Obras Públicas</a>
+          </div>
+        </li>
         <li><a href="/#solucoes">Serviços ▾</a></li>
         <li><a href="/#cases">Cases</a></li>
         <li><a href="/#insights">Insights</a></li>
