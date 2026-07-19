@@ -17,6 +17,7 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
 <script type="application/ld+json">
 {
@@ -37,8 +38,8 @@
     --navy-950:#0a1730;
     --navy-900:#0d1d3f;
     --navy-800:#122a54;
-    --gold-500:#f6a821;
-    --gold-600:#e2960f;
+    --gold-500:#375da5;
+    --gold-600:#2c4a84;
     --ink-900:#0d1d3f;
     --ink-600:#5b6b85;
     --ink-400:#8695ac;
@@ -70,8 +71,8 @@
   .btn svg{transition:transform .18s ease;}
   .btn:hover svg{transform:translateX(3px);}
   .btn-primary{
-    background:var(--gold-500);color:var(--navy-950);
-    box-shadow:0 8px 20px -6px rgba(246,168,33,.55);
+    background:var(--gold-500);color:#fff;
+    box-shadow:0 8px 20px -6px rgba(55,93,165,.55);
   }
   .btn-primary:hover{background:var(--gold-600);transform:translateY(-1px);}
   .btn-outline{
@@ -93,6 +94,7 @@
     padding:18px 32px;max-width:1240px;margin:0 auto;
   }
   .logo{display:flex;flex-direction:column;line-height:1;}
+  .logo-img{height:34px;width:auto;display:block;}
   .logo-word{font-size:26px;font-weight:800;color:#fff;letter-spacing:.5px;}
   .logo-word span{color:var(--gold-500);}
   .logo-tag{font-size:9px;letter-spacing:2.5px;color:var(--ink-400);margin-top:2px;font-family:'Inter',sans-serif;}
@@ -193,7 +195,7 @@
     display:flex;align-items:center;justify-content:center;color:var(--navy-900);
     transition:all .18s ease;
   }
-  .sector-card:hover .card-arrow{background:var(--gold-500);border-color:var(--gold-500);color:#0a1730;}
+  .sector-card:hover .card-arrow{background:var(--gold-500);border-color:var(--gold-500);color:#fff;}
 
   /* ---------- SOLUTIONS ---------- */
   .solutions{background:var(--bg-soft);padding:88px 0;}
@@ -308,7 +310,7 @@
 
   .page-hero{background:var(--navy-950);padding:60px 0 76px;}
   .page-hero .tag{
-    display:inline-block;background:rgba(246,168,33,.15);color:var(--gold-500);
+    display:inline-block;background:rgba(55,93,165,.15);color:var(--gold-500);
     font-weight:700;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;
     padding:7px 16px;border-radius:999px;margin-bottom:20px;
   }
@@ -359,8 +361,7 @@
 <header>
   <div class="nav-wrap">
     <a href="/" class="logo">
-      <span class="logo-word">MIND<span>Y</span></span>
-      <span class="logo-tag">MARKETING DE RESULTADOS</span>
+      <img src="/assets/img/logo-mindy-branco.svg" alt="Mindy Marketing" class="logo-img">
     </a>
     <nav class="main-nav">
       <ul>
